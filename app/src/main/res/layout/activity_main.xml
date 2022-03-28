@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/wine"
+        android:padding="8dp"
+        android:id="@+id/linear_top_bar"
+        >
+        <ImageView
+            android:id="@+id/image_all"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_all_inclusive_24"
+            app:tint="@color/white"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/image_faces"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_tag_faces_24"
+            android:layout_weight="1"/>
+        <ImageView
+            android:id="@+id/image_sunny"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:src="@drawable/ic_baseline_wb_sunny_24"
+            android:layout_weight="1"/>
+    </LinearLayout>
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linear_top_bar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="@string/ola_kotlin"
+        android:id="@+id/text_user_name"
+        />
+
+    <TextView
+        android:id="@+id/text_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:padding="16dp"
+        android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Volutpat commodo sed egestas egestas fringilla phasellus. Netus et malesuada fames ac turpis egestas maecenas."
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="128dp"
+        android:layout_height="5dp"
+        android:layout_below="@+id/text_frase"
+        android:background="@color/wine"
+        android:layout_centerHorizontal="true"
+        />
+
+    <Button
+        android:id="@+id/button_nova_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="32dp"
+        android:backgroundTint="@color/wine"
+        android:fontFamily="sans-serif"
+        android:text="@string/nova_frase"
+        android:textAllCaps="true" />
+</RelativeLayout>
